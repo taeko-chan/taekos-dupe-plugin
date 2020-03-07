@@ -1,0 +1,24 @@
+name: Dupe
+version: 1.0-SNAPSHOT
+main: com.skysucht.taeko.dupe.Dupe
+api-version: 1.13
+commands:
+  dupe:
+    description: Dupe Checker by TAEKO
+    usage: /dupe
+    permission: dupe.*
+    permission-message: You don't have Dupe
+  taekoisgreat:
+    description: Easter Egg
+    usage: /taekoisgreat
+
+permissions:
+  dupe.*:
+    description: Gives access to all commands in Dupe
+    default: op
+  dupe.clear:
+    description: Allows player to clear Dupe list
+    default: op
+  dupe.show:
+    description: Allows player to show Dupe list
+    default: op
