@@ -1,9 +1,3 @@
-/*
-
-   EventHandler that scans chunks for chests and checks if they contain valuables.
-
-*/
-
 package com.skysucht.taeko.dupe;
 
 import org.bukkit.Chunk;
@@ -33,7 +27,8 @@ public final class DupeChunkHandlerListener implements Listener {
                 for (Material material : Valuables.valuables) {
                     if (currentChest.getInventory().contains(material)) {
                         String fullLocation = "X: " + currentBlock.getX() + ", Y: " +
-                                currentBlock.getY() + ", Z: " + currentBlock.getZ();
+                                currentBlock.getY() + ", Z: " + currentBlock.getZ()
+                                + " | Type: " + material.toString().toLowerCase();
                         if (!Dupe.locations.contains(fullLocation)) {
                             Dupe.locations.add(fullLocation);
                             Dupe.chunksHaveValuables += 1;
