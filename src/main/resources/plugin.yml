@@ -1,6 +1,6 @@
 name: Dupe
 version: ${project.version}
-main: com.skysucht.taeko.dupe.Dupe
+main: com.flight134.taeko.dupe.Dupe
 api-version: 1.13
 commands:
   dupe:
